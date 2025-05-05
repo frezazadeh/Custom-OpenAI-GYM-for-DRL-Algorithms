@@ -1,4 +1,4 @@
-# Multi-Agent Graph-ESN Reinforcement Learning on BS-v0
+# Multi-Agent Graph-ESN Reinforcement Learning
 
 A multi-agent reinforcement learning framework for a custom OpenAI Gym environment (`BS-v0`), combining Echo State Networks (ESN) for temporal encoding and Graph Convolutional Networks (GCN) for relational state representation, trained via the REINFORCE algorithm.
 
@@ -15,10 +15,7 @@ A multi-agent reinforcement learning framework for a custom OpenAI Gym environme
   - Spin up *N* independent agents in parallel, each on its own `BS-v0` instance  
   - On-policy training loop with per-episode ESN reset and policy updates  
 
-## 📦 Repository Structure
+## 📦 Core dependencies
 
-├── Agent.py          # ESN+GNN+REINFORCE agent implementation
-├── MultiAgent.py     # Orchestrates multiple agents/envs in parallel
-├── custom_BS.py      # CartPole-clone Gym env registered as ‘BS-v0’
-├── main.py           # Entry point: train N agents for M episodes
-└── README.md         # This file
+pip install gym pygame torch-geometric numpy
+
