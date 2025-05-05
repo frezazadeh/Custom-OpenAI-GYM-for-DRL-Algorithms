@@ -16,3 +16,9 @@ A multi-agent reinforcement learning framework for a custom OpenAI Gym environme
   - On-policy training loop with per-episode ESN reset and policy updates  
 
 ## 📦 Repository Structure
+
+├── Agent.py          # ESN+GNN+REINFORCE agent implementation
+├── MultiAgent.py     # Orchestrates multiple agents/envs in parallel
+├── custom_BS.py      # CartPole-clone Gym env registered as ‘BS-v0’
+├── main.py           # Entry point: train N agents for M episodes
+└── README.md         # This file
